@@ -1,0 +1,159 @@
+/* ================================
+   RESET DEFAULT STYLES
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   COLOR SCHEME & FONTS
+================================ */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --bg-color: #f4f6f8;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ================================
+   HEADER & NAVIGATION
+================================ */
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* ================================
+   SECTIONS
+================================ */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+#about img {
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+/* ================================
+   SKILLS
+================================ */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+#skills li {
+  background: white;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* ================================
+   PROJECTS (FLEXBOX)
+================================ */
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+article img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* ================================
+   LINKS & BUTTON EFFECTS
+================================ */
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ================================
+   RESPONSIVE DESIGN (MOBILE)
+================================ */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  #skills ul {
+    flex-direction: column;
+  }
+}
